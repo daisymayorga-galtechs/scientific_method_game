@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  #steps {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Step Box Styling */
+  .step {
+    background-color: #4CAF50;
+    color: white;
+    margin: 10px;
+    padding: 15px;
+    cursor: grab;
+    border-radius: 8px;
+    border: 2px solid #388E3C;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    user-select: none;
+  }
+  
+  .step:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .step:active {
+    cursor: grabbing;
+  }
+  
+  /* Hidden Element Styling */
+  .hidden {
+    display: none;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #2196F3;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0b7dda;
+  }
+  
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
